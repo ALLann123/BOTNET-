@@ -12,5 +12,8 @@ The client.sh script is a bash script that we execute onthe target system. The s
 ![botnet](https://github.com/user-attachments/assets/3a4f30b5-7d13-465a-8aab-2831642bd514)
 
 The above concepts are used in creating realworld botnets. Example if the attacker instructs the bots inthe botnet to ping a particular website example google this may lead to a destributed denial of service attack as all the connected machines will be doing this at the same time.
+On the attacker machine all the hacker has to do to get all the victims to execute a request such us to ping a web server is edit the commands.sh file:
+
+        kali> echo "ping -c 10 google.com" > commands.sh                                     #after executing this the victim machines begin runing the new command.
 
 ![botnet ping](https://github.com/user-attachments/assets/cc894a4d-98a2-4642-9e37-d1a87f55f9f4)
