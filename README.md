@@ -11,6 +11,7 @@ Execute the client.sh script on three computers i.e Kali linux machine, metasplo
 
     metasploitable> bash client.sh
     parrot@root> bash client.sh
+    kali> bash client.sh
 ![botnet](https://github.com/user-attachments/assets/3a4f30b5-7d13-465a-8aab-2831642bd514)
 
 The above concepts are used in creating realworld botnets. Example if the attacker instructs the bots inthe botnet to ping a particular website example google this may lead to a destributed denial of service attack as all the connected machines will be doing this at the same time.
