@@ -1,11 +1,12 @@
 # BOTNET
 This is a demonstration on how botnets are able to control a number of devices at the same time.
 
-The script server.py uses socketserver to allow multiple targets to connect to the attacker machine. Start it by
+The script server.py uses socketserver to allow multiple targets to connect to the attacker machine. These turns the attacker machine to the botmaster. Start it by
 
     kali> python3 server.py
 
-The client.sh script is a bash script that we execute onthe target system. The script works by downloading and execuitng the contents that are inthe comments.sh file and sleeps for 10 seconds then requests the server onthe attacker machine for the contents of the file. 
+The client.sh script is a bash script that we execute onthe target system. The script works by downloading and execuitng the contents that are inthe comments.sh file and sleeps for 10 seconds then requests the server onthe attacker machine for the contents of the file. Comments.sh file is used bythe botmaster(attacker) to issue commands to the victims(bots).
+
 Execute the client.sh script on three computers i.e Kali linux machine, metasploitable and a parrot machine to tie them to the command and control server.
 
     metasploitable> bash client.sh
