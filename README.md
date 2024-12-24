@@ -6,6 +6,7 @@ The script server.py uses socketserver to allow multiple targets to connect to t
     kali> python3 server.py
 
 The client.sh script is a bash script that we execute onthe target system. The script works by downloading and execuitng the contents that are inthe comments.sh file and sleeps for 10 seconds then requests the server onthe attacker machine for the contents of the file. 
+Execute the client.sh script on three computers i.e Kali linux machine, metasploitable and a parrot machine to tie them to the command and control server.
 
     metasploitable> bash client.sh
     parrot@root> bash client.sh
